@@ -15,6 +15,75 @@
 
 </head>
 
+<style>
+
+.circle-container {
+  position: relative;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  margin: 5em auto 0;
+  border: solid 5px tomato;
+}
+.circle-container > * {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3em;
+  width: 6em;
+  height: 6em;
+}
+.circle-container > *:nth-of-type(1) {
+  -webkit-transform: rotate(0deg) translate(10em) rotate(0deg);
+          transform: rotate(0deg) translate(10em) rotate(0deg);
+}
+.circle-container > *:nth-of-type(2) {
+  -webkit-transform: rotate(45deg) translate(10em) rotate(-45deg);
+          transform: rotate(45deg) translate(10em) rotate(-45deg);
+}
+.circle-container > *:nth-of-type(3) {
+  -webkit-transform: rotate(90deg) translate(10em) rotate(-90deg);
+          transform: rotate(90deg) translate(10em) rotate(-90deg);
+}
+.circle-container > *:nth-of-type(4) {
+  -webkit-transform: rotate(135deg) translate(10em) rotate(-135deg);
+          transform: rotate(135deg) translate(10em) rotate(-135deg);
+}
+.circle-container > *:nth-of-type(5) {
+  -webkit-transform: rotate(180deg) translate(10em) rotate(-180deg);
+          transform: rotate(180deg) translate(10em) rotate(-180deg);
+}
+.circle-container > *:nth-of-type(6) {
+  -webkit-transform: rotate(225deg) translate(10em) rotate(-225deg);
+          transform: rotate(225deg) translate(10em) rotate(-225deg);
+}
+.circle-container > *:nth-of-type(7) {
+  -webkit-transform: rotate(270deg) translate(10em) rotate(-270deg);
+          transform: rotate(270deg) translate(10em) rotate(-270deg);
+}
+.circle-container > *:nth-of-type(8) {
+  -webkit-transform: rotate(315deg) translate(10em) rotate(-315deg);
+          transform: rotate(315deg) translate(10em) rotate(-315deg);
+}
+.circle-container img {
+  display: block;
+  max-width: 100%;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  border: solid 5px tomato;
+  transition: .15s;
+}
+.circle-container img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+</style>
+
 <body>
 	<header class="main-header">
 		<nav class="navbar navbar-expand-md navbar-dark">
@@ -902,6 +971,20 @@
 			</div>
 		</div>
 	</section>
+	<br>
+	<br>
+	<ul class='circle-container'>
+		<li><img src='http://lorempixel.com/100/100/city'></li>
+		<li><img src='http://lorempixel.com/100/100/nature'></li>
+		<li><img src='http://lorempixel.com/100/100/abstract'></li>
+		<li><img src='http://lorempixel.com/100/100/cats'></li>
+		<li><img src='http://lorempixel.com/100/100/food'></li>
+		<li><img src='http://lorempixel.com/100/100/animals'></li>
+		<li><img src='http://lorempixel.com/100/100/business'></li>
+		<li><img src='http://lorempixel.com/100/100/people'></li>
+	  </ul>
+	<br>
+	<br>
 	<footer class="main-footer">
 		<div class="footer-top">
 			<div class="container">
