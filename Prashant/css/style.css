@@ -38,7 +38,7 @@ ul, li{
 }
 
 a:hover,
-button:hover {
+button:hover{
 	text-decoration: none;
 	outline: none;
 }
@@ -46,6 +46,7 @@ button:hover {
 button {
 	border: 0;
 	background: transparent;
+	outline: none !important;
 }
 
 input[type="submit"] {
@@ -187,6 +188,11 @@ button.navbar-toggler.hamburger-button {
 
 /***** Navigation ends here *****/
 
+/***** Main content *****/
+
+
+/***** Main content *****/
+
 /***** Footer starts here *****/
 .top-footer {
 	background: #000;
@@ -284,4 +290,140 @@ button.navbar-toggler.hamburger-button {
 }
 
 /***** Bottom *****/
+/***** Contact us popup *****/
+.modal-dialog {
+    width: 100% !important;
+    margin: 30px auto !important;
+}
+.modal-content {
+	background-color: rgba(0, 0, 0, 0.9) !important;
+    padding: 85px 70px;
+    width: 80%;
+    height: 100%;
+	z-index: 9;
+	margin: 0 auto;
+}
+.modal-header {
+    padding: 15px;
+	border-bottom: none !important;
+	color: #fff;
+}
+.modal-header button {
+    opacity: 1;
+}
+.modal-body .form-group input, .modal-body .form-group select {
+	width: 100%;
+}
+.modal-body .form-group textarea {
+	width: 100%;
+	padding: 11px 12px 11px 0;
+}
+.modal-body .row {
+	margin-bottom: 50px;
+}
+.modal-body .row:last-child {
+	margin-bottom: 0;
+}
+.btn-send {
+    border: 1px solid #FFF;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #FFF;
+}
+/***** Contact us popup *****/
 /***** Footer ends here *****/
+
+/***** Pilot run popup *****/
+.container-box {
+    display: inline-block;
+    position: fixed;
+    top: 55%;
+    left: 0;
+}
+.pilot-button{
+	color: #fff;
+    background-color: #16ACFF;
+	border-color: #16ACFF;
+	padding: 10px 16px !important;
+    font-size: 18px !important;
+	line-height: 1.3333333;
+	border-radius: 0 !important;
+}
+.rotated{
+	-moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    transform-origin: top left;  
+}
+.pilot.modal select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url(../images/angle-down.png) no-repeat 97% 50% !important;
+}
+.pilot-file-upload {
+	position: relative;
+	margin-top: 10px;
+}
+.pilot-file-upload .file-upload {
+	display: inline-block;
+
+	font-size: 14px;
+	width: 100%;
+}
+.pilot-file-upload .file-upload .file-select {
+	display: block;
+	color: #34495e;
+	cursor: pointer;
+	background: transparent;
+	overflow: hidden;
+	position: relative;
+}
+
+.pilot-file-upload .file-upload .file-select .file-select-button {
+	background: transparent;
+	padding: 0;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 4px;
+	margin-top: 0;
+	width: 30px;
+	position: absolute;
+	top: 7px;
+	right: 0px;
+}
+
+.pilot-file-upload .file-upload .file-select:hover .file-select-button {
+	color: #fff;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}
+
+.pilot-file-upload .file-upload .file-select .file-select-name {
+	display: inline-block;
+	padding: 0;
+	font-size: 14px;
+	color: #FFF;
+	width: 100%;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	padding: 6px 15px;
+
+}
+
+.pilot-file-upload .file-upload .file-select input[type="file"] {
+	z-index: 100;
+	cursor: pointer;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+/***** Pilot run popup *****/

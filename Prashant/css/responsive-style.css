@@ -61,4 +61,20 @@
 		margin-bottom: 20px;
 		display: block;
 	}
+	.modal-content {
+		background-color: rgba(0, 0, 0, 0.9) !important;
+		padding: 85px 10px;
+		width: 96%;
+		height: 100%;
+		z-index: 9;
+		margin: 0 auto;
+	}
+	.modal-body .row:first-child {
+		margin-bottom: 0;
+	}
+	.modal-body .form-group input,
+	.modal-body .form-group textarea,
+	.modal-body .form-group select {
+		margin-bottom: 20px;
+	}
 }
