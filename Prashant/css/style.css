@@ -181,6 +181,7 @@ button.navbar-toggler.hamburger-button {
 /***** Navigation ends here *****/
 
 /***** Main content *****/
+
 main {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -284,9 +285,6 @@ main {
 	margin-bottom: 10px;
 	position: relative;
 }
-
-/* progress bar */
-
 .service-slider .slick-slide {
 	margin: 0 5px;
 }
@@ -422,16 +420,20 @@ footer{
 
 /***** Bottom *****/
 /***** Contact us popup *****/
-.modal {
+.contact-us.modal {
     position: absolute !important;
-    /* top: 0; */
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
 }
-.modal-dialog {
+.contact-us.modal .modal-dialog {
     width: 100% !important;
     margin: 0 auto !important;
+}
+.modal-dialog {
+    width: 100% !important;
+    margin: 30px auto !important;
 }
 .modal-content {
 	background-color: rgba(0, 0, 0, 0.9) !important;
