@@ -605,5 +605,272 @@ footer{
 	max-height: 700px;
 }
 
+.text-center{
+	text-align: center;
+}
 
+.text-left{
+	text-align: left;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.slideContent-Wrapper{
+	padding-top: 120px;
+	color: #fff;
+}
+
+.slideContent-Wrapper h2{
+	font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-family: CenturyGothic;
+	letter-spacing: 0.5rem;
+	margin: 10px auto;
+}
+
+.slideContent-Wrapper h5{
+	font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: CenturyGothic;
+	letter-spacing: 0.5rem;
+	margin: auto
+}
+
+.text-blue{
+	color: #16ACFF;
+}
 /*********** slide ************/
+
+
+
+.display-table {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.top-text-slide {
+	font-size: 38px;
+	text-align: center;
+	line-height: 35px;
+	font-family: 'CenturyGothic-Bold';
+	margin-bottom: 30px;
+}
+
+
+.padding-top-30 {
+	padding-top: 30px;
+}
+
+.padding-top-80 {
+	padding-top: 80px;
+}
+
+.banner-content-height {
+	height: 410px;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.slide-name-list {
+
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 88%;
+}
+
+.slide-name-list ul {
+	padding: 0;
+	margin: 0;
+}
+
+.slide-name-list ul li {
+	float: left;
+	display: block;
+	opacity: 0.5;
+	padding-right: 40px;
+	width: 200px;
+	font-size: 16px;
+}
+
+.slide-name-list ul li:last-child {
+	padding-right: 0px;
+}
+
+.slide-name-list ul li.active {
+	opacity: 1;
+}
+
+.main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 99999;
+}
+
+.navbar {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	padding: 0;
+
+}
+
+.darkHeader {
+	background: #000 !important;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 500px;
+	padding: 15px;
+	margin: 0;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.9);
+	text-align: left;
+	list-style: none;
+	background: rgba(0, 0, 0, 0.9);
+	background-clip: padding-box;
+	border: 0px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+	color: #FFF;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+.dropdown-item {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	clear: both;
+	font-weight: normal;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: transparent;
+	border: 0;
+}
+
+.dropdown-toggle::after {
+	display: block;
+	float: right;
+	font-family: 'FontAwesome';
+	width: 10px;
+	height: 10px;
+	margin-left: 0.75em;
+	vertical-align: 0.255em;
+	content: "\f107";
+	border-top: 0 solid;
+	border-right: 0 solid transparent;
+	border-bottom: 0;
+	border-left: 0 solid transparent
+}
+
+.top-text {
+	font-size: 51px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 42px;
+	margin-bottom: 30px;
+	font-family: 'CenturyGothic-Bold';
+}
+
+.top-text.left-text {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.below-text.left-text {
+	font-size: 18px;
+	line-height: 23px;
+	margin-bottom: 0;
+}
+
+.below-text {
+	font-size: 30px;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom: 70px;
+}
+
+.blue-text {
+	color: #19a6f4;
+}
+
+.flow-process {
+	text-align: center;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.flow-process span {
+	padding-right: 35px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.flow-process i {
+	padding-right: 35px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.border-bottom-white {
+	width: 100%;
+	height: 2px;
+	background: #FFF;
+}
+
+.service-box {
+	display: flex;
+}
+
+.service-title {
+	position: relative;
+	width: 100%;
+}
+
+.name-service a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 15px;
+	font-size: 14px;
+	color: #FFF;
+}
+
+.name-service a:hover {
+	text-decoration: none;
+	opacity: 0.8;
+	transition: 0.35s ease-in;
+}
+
+.image-box {
+	display: block;
+	float: left;
+	background: #FFF;
+}

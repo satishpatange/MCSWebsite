@@ -593,14 +593,6 @@ input[type="submit"] {
 	margin-bottom: 30px;
 }
 
-/*.dropdown:hover>.dropdown-menu {
-  	display: block;
-	transition: 0.35s ease-in;
-}
-
-.dropdown>.dropdown-toggle:active {
-    pointer-events: none;
-}*/
 
 .padding-top-30 {
 	padding-top: 30px;
@@ -1149,4 +1141,3 @@ input[type="submit"] {
 }
 
 /*---spacing css end---*/
-
