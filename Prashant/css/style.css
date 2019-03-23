@@ -206,7 +206,7 @@ main {
 .sticky-sidebar{
 	position: -webkit-sticky !important;
 	position: sticky !important;
-	top: 20px;
+	top: 120px;
 }
 .sidebar ul li {
 	list-style: none;
@@ -568,4 +568,15 @@ footer{
 
 .position-initial{
 	position: initial;
+}
+
+/***** inner page ****/
+
+
+.innerpage-Banner{
+	max-height: 400px;
+	width: 100%;
+	background-image: url(../images/slider/1.png);
+	background-size: cover;
+	height: 400px;
 }
