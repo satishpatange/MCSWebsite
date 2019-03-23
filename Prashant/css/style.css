@@ -55,6 +55,11 @@ input[type="submit"] {
 img{max-width: 100%;}
 
 /***** Navigation starts here *****/
+header{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+}
 .navbar {
 	border-radius: 0 !important;
 	background: rgba(000, 000, 000, 0.6)
