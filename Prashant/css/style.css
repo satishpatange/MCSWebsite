@@ -198,6 +198,11 @@ main {
 .breadcrumb a.active {
 	color: #19a6f4;
 }
+.sticky-sidebar{
+	position: -webkit-sticky !important;
+	position: sticky !important;
+	top: 20px;
+}
 .sidebar ul li {
 	list-style: none;
 	margin-bottom: 20px;
@@ -232,7 +237,8 @@ main {
     font-size: 22px;
     font-family: 'CenturyGothic-Bold';
     color: #19a6f4;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
+	margin-top: 0;
     line-height: 22px;
 }
 .content{
@@ -544,3 +550,7 @@ main {
 	filter: alpha(opacity=0);
 }
 /***** Pilot run popup *****/
+
+.position-initial{
+	position: initial;
+}
