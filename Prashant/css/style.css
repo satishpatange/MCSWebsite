@@ -418,6 +418,15 @@ footer{
 	text-align: center;
 }
 
+.social-media {
+    margin-left: 20%;
+}
+
+.social-links a img{
+	padding: 7px;
+	width: 40px;
+	height: 40px;
+}
 /***** Bottom *****/
 /***** Contact us popup *****/
 .contact-us.modal {
@@ -582,3 +591,19 @@ footer{
 	background-size: cover;
 	height: 400px;
 }
+
+
+/***** inner page ****/
+
+/*********** slide ************/
+
+.slides{
+	/* background-image: url(images/slider/1.png); */
+	width: 100%;
+	display: inline-block;
+	height: 700px;
+	max-height: 700px;
+}
+
+
+/*********** slide ************/
