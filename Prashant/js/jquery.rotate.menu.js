@@ -123,7 +123,8 @@
 					transform	: 'rotate(' + linkDegree + 'deg)',
 				});
 				
-				$div.children("a").css("transform", "rotate(" + linkAngle * linkAngleNth + "deg)"),
+				// $div.children("a").css("transform", "rotate(" + ( linkAngle * linkAngleNth - 0)  + "deg)"),
+				$div.children("a").css("transform", "rotate(90deg)"),
 				linkAngleNth++;
 
 			});
@@ -162,7 +163,7 @@
 					linkActive = nth;
 
 				// menu rotate
-				$el.css('transform', 'rotate(' + newAngle + 'deg)');
+				$el.css('transform', 'rotate(' + (newAngle - 90) + 'deg)');
 
 				// activate a
 				$el.find('a.active').removeClass('active');
