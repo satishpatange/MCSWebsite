@@ -118,6 +118,7 @@ $(function()
 	$('#contact_form_popup, #pilot_form_popup').submit(function(e)
       {
         e.preventDefault();
+        var url = "../contactMail.php";
 
         $form = $(this);
         //show some response on the button
@@ -132,7 +133,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url: '',
+                url: url,
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json' 
@@ -141,4 +142,45 @@ $(function()
       });	
 });
 
+
+$(function () {
+  $('#contact-form').on('submit', function (e) {
+   if (!e.isDefaultPrevented()) {
+    var url = "../contact.php";
+
+    $.ajax({
+     type: "POST",
+     url: url,
+     data: $(this).serialize(),
+     success: function (data) {
+      var messageAlert = 'alert-' + data.type;
+      var messageText = data.message;
+      var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+      if (messageAlert && messageText) {
+       $('#contact-form').find('.messages').html(alertBox);
+       $('#contact-form')[0].reset();
+      }
+     }
+    });
+    return false;
+
+   }
+  })
+});
+
 /***** Contact us form *****/
+
+/*==== Accordion =====*/
+
+$(document).ready(function() {
+  $('.collapse.in').prev('.panel-heading').addClass('active');
+  $('#accordion, #bs-collapse')
+    .on('show.bs.collapse', function(a) {
+      $(a.target).prev('.panel-heading').addClass('active');
+    })
+    .on('hide.bs.collapse', function(a) {
+      $(a.target).prev('.panel-heading').removeClass('active');
+    });
+});
+
+/*==== Accordion =====*/

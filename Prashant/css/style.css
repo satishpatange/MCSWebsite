@@ -226,13 +226,13 @@ main {
 	top: 2px;
 }
 .sidebar ul li.active a,
-.sidebar ul li:hover a {
+.sidebar ul li a:hover {
 	font-size: 16px;
 	color: #000;
 	font-family: 'CenturyGothic-Bold';
 }
 .sidebar ul li.active a i,
-.sidebar ul li:hover a i {
+.sidebar ul li a:hover i {
 	font-size: 24px;
 	color: #19a6f4;
 	line-height: 15px;
@@ -874,3 +874,151 @@ footer{
 	float: left;
 	background: #FFF;
 }
+
+/*========= Domain expert ==========*/
+
+.de-rotate-slides{overflow: hidden;}
+
+.rotating-slider ul.rotate-slides li { color: #fff }
+
+.rotating-slider ul.rotate-slides li:nth-of-type(1) { background: #3498db; }
+
+.rotating-slider ul.rotate-slides li:nth-of-type(2) { background: url('http://static.pexels.com/wp-content/uploads/2014/05/car-oldtimer-snow-342-825x550.jpg'); }
+
+.rotating-slider ul.rotate-slides li:nth-of-type(3) { background: #e74c3c; }
+
+.rotating-slider ul.rotate-slides li:nth-of-type(4) { background: url('http://static.pexels.com/wp-content/uploads/2014/06/analog-camera-old-olympus-om-10-1528-825x550.jpg'); }
+
+.rotating-slider ul.rotate-slides li:nth-of-type(5) { background: #f1c40f; }
+
+.rotating-slider ul.rotate-slides li:nth-of-type(6) { background: url(http://static.pexels.com/wp-content/uploads/2014/06/bridge-city-night-645-827x550.jpg); }
+
+.rotating-slider ul.rotate-slides li .inner {
+  box-sizing: border-box;
+  padding: 2em;
+  height: 100%;
+  width: 100%;
+}
+
+/*========= Domain expert ==========*/
+
+/*========= Accordion Starts =======*/
+
+.panel {
+    margin-bottom: 20px !important;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05) !important;
+    box-shadow: 0 1px 7px rgba(0,0,0,.07) !important;
+}
+
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  border-radius: 0;
+  border: none;
+  color: #000;
+  padding: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: #000;
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.panel-title a:hover, .panel-title a:focus {
+    text-decoration: none
+}
+
+.panel-body {
+    background: #fff;
+    font-family: 'CenturyGothic';
+    font-size: 16px;
+    padding: 15px 30px !important;
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  transition: border-radius linear 0s;
+}
+/* #bs-collapse icon scale option */
+
+.panel-heading a:before {
+  content: '\f107';
+  position: absolute;
+  font-family: 'FontAwesome';
+  right: 5px;
+  top: 10px;
+  font-size: 24px;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.panel-heading.active a:before {
+  content: ' ';
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+#bs-collapse .panel-heading a:after {
+  content: ' ';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'FontAwesome';
+  right: 5px;
+  top: 10px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+  content: '\e909';
+  transform: scale(1);
+  transition: all 0.5s;
+}
+/* #accordion rotate icon option */
+
+#accordion .panel-heading a:before {
+  content: '\f107';
+  font-size: 24px;
+  position: absolute;
+  font-family: 'FontAwesome';
+  right: 5px;
+  top: 10px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+#accordion .panel-heading.active a:before {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+/* ========= Accordion ends ========= */

@@ -1,4 +1,10 @@
 
+$(function() {
+	$(".rotating-slider").rotatingSlider({
+			slideHeight: Math.min(250),
+			slideWidth: Math.min(190)
+	})
+}),
 (function($) {
 
 	$.fn.rMenu = function(options) {
@@ -123,11 +129,29 @@
 					transform	: 'rotate(' + linkDegree + 'deg)',
 				});
 				
-				// $div.children("a").css("transform", "rotate(" + ( linkAngle * linkAngleNth - 0)  + "deg)"),
-				$div.children("a").css("transform", "rotate(90deg)"),
+				$div.children("a").css("transform", "rotate(" + ( linkAngle * linkAngleNth - 0)  + "deg)"),
+				//$div.children("a").css("transform", "rotate(90deg)"),
+                    //$div.children("a").animate('transform', "rotate(' +=10 ' deg)"),
+                        /*$(".hb-link").click(function() {
+                            $div.children('a').animate({
+                                'transform' : "rotate (' +=10 ' deg)"
+                            });
+                        });*/
 				linkAngleNth++;
 
 			});
+            
+            $(function() {
+                //var $div = $(this).parent('.hb-link');
+                $(".hb-link").click(function() {
+                    $('.hb-link a').animate({  textIndent: 10 }, {
+                        step: function(now) {
+                          $(this).css('-webkit-transform','rotate(' + ( linkAngle * linkAngleNth - 0)  + now +'deg)'); 
+                        },
+                        duration:'slow'
+                    });
+                });
+            });
 
 			linkMaxWidth += options.linkPadding * 2;
 

@@ -3,7 +3,7 @@
         var rotatingSlider = {
             init: function(el){
                 this.$slider = $(el);
-                this.$slidesContainer = this.$slider.children('ul.slides');
+                this.$slidesContainer = this.$slider.children('ul.rotate-slides');
                 this.$slides = this.$slidesContainer.children('li');
                 this.$clipPath;
                 this.$directionControls;
