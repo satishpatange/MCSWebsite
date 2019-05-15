@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+	button.navbar-toggler.hamburger-button {
+		display: none;
+	}
+	nav.navbar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.navbar-nav>li>a {
+		padding-top: 42px !important;
+		padding-bottom: 42px !important;
+		/* height: 100%; */
+	}
+	.dropdown-menu {
+		min-width: 500px !important;
+		left: -80% !important;
+	}
+	.first-dropdown-menu{
+		left: 0% !important;
+	}
+	.dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu{
+		  display: block;
+	  }
+	  .dropdown-menu{
+		  margin-top: 0;
+	  }
+	  .dropdown-toggle{
+		  margin-bottom: 2px;
+	  }
+	  .navbar .dropdown-toggle, .nav-tabs .dropdown-toggle{
+		  margin-bottom: 0;
+	  }
+	  .navbar-nav>li>.dropdown-menu {
+		padding-left: 25%;
+	}
+	.contact-form, .contact-info{
+		margin-left: 20%;
+	}
+  }
+
+@media screen and (max-width: 767px){
+	.hamburger-icon {
+		margin-top: 30px;
+	}
+	.navbar-brand {
+		float: none;
+		width: 70%;
+		text-align: center;
+	}
+	.navbar-brand>img {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.navbar-header{
+		float: none;
+		width: 100%;
+	}
+	button.navbar-toggler.hamburger-button {
+		float: right;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		display: block;
+	}
+	.modal-content {
+		background-color: rgba(0, 0, 0, 0.9) !important;
+		padding: 85px 10px;
+		width: 96%;
+		height: 100%;
+		z-index: 9;
+		margin: 0 auto;
+	}
+	.modal-body .row:first-child {
+		margin-bottom: 0;
+	}
+	.modal-body .form-group input,
+	.modal-body .form-group textarea,
+	.modal-body .form-group select {
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 768px){
+	.sticky-sidebar{
+		display: none;
+	}
+}

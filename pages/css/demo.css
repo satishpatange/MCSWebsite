@@ -1,0 +1,62 @@
+*:focus{ outline: none !important; }
+
+html, body{ min-width: 500px; }
+body{ font-family: Arial; }
+
+h3{ margin: 50px 0 15px; padding-bottom: 5px; border-bottom: 1px solid #ccc; color: #014930; border-bottom: 2px solid #ddd; font-size: 28px; }
+
+p{ margin-bottom: 20px; }
+
+
+/* Tab */
+.tabs-wrapper{ margin-bottom: 20px; }
+.tabs{ min-height: 30px; background-image: url("http://rmenu.ozkanozturk.me/assets/images/bgTab.png"); background-position: left top; background-repeat: repeat-x; }
+.tabs:after{ content: ""; display: table; clear: both; }
+	.tabs a{ float: left; display: inline-block; height: 30px; line-height: 20px; padding: 5px 15px; color: #fbfbfb; background-color: #014930; border: 1px solid #014930; border-top-left-radius: 7px; border-top-right-radius: 7px; font-size: 12px; font-weight: bold; text-align: center; text-decoration: none !important; }
+	.tabs a:hover{ background-color: #014930; }
+	.tabs a.active{ color: #014930; background-color: #fbfbfb !important; border-bottom: 1px solid #fff; }
+.tab-content{ display: none; margin: -1px 0 20px; padding: 10px; background-color: #fbfbfb; border: 1px solid #014930; }
+.tab-content.active{ display: block; }
+
+
+
+.service-section{
+	margin-top: 100px;
+}
+.menu-content {
+    margin-top: -30px;
+    width: 145px;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-transition: ease-in-out all .3s;
+    transition: ease-in-out all .3s;
+}
+.menu-content img {
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+    -moz-transition: ease-in-out all .3s;
+    -o-transition: ease-in-out all .3s;
+    background: #09496f;
+    border-radius: 50%;
+}
+.text-center {
+    text-align: center !important;
+}
+.hb-rotate-content .hb-tab.hb-tab-expanded {
+    height: auto !important;
+}
+.hb-link a.active .menu-content img {
+    background-color: #f76738;
+}
+.center_content {
+    position: absolute;
+    left: 265px;
+    width: 200px;
+    height: 200px;
+    z-index: 99999;
+    top: 100px;
+    padding-top: 16px;
+    margin-left: -24px;
+}
+
