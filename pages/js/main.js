@@ -140,30 +140,39 @@ $(function()
         
       });	
 });
-
-
-$(function () {
-  $('#contact-form').on('submit', function (e) {
-   if (!e.isDefaultPrevented()) {
-    var url = "../contact.php";
-
-    $.ajax({
-     type: "POST",
-     url: url,
-     data: $(this).serialize(),
-     success: function (data) {
-      var messageAlert = 'alert-' + data.type;
-      var messageText = data.message;
-      var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-      if (messageAlert && messageText) {
-       $('#contact-form').find('.messages').html(alertBox);
-       $('#contact-form')[0].reset();
-      }
-     }
+$('.close').on('click', function(c){
+    $('.alert').fadeOut('slow', function(c){
     });
-    return false;
-
-   }
-  })
 });
+
 /***** Contact us form *****/
+
+/********* INCLUDE FOOTER *********/
+
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      return;
+    }
+  }
+};
+
+includeHTML();
+
+/********* INCLUDE FOOTER *********/
