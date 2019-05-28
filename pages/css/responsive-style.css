@@ -80,6 +80,16 @@
 	.modal-body .form-group select {
 		margin-bottom: 20px;
 	}
+    .navbar-collapse {
+        position: fixed;
+        width: 100%;
+        overflow-y: scroll !important;
+        top: 85px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #000;
+    }
 }
 @media only screen and (max-width: 768px){
 	.sticky-sidebar{
